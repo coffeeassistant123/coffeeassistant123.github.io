@@ -6,6 +6,7 @@
     <title>我的官网</title>
     <style>
         body {
+                    background-color: #f2f2f2;
             font-family: Arial, sans-serif;
         }
         header, footer {
@@ -30,13 +31,23 @@
             width: 60%;
             background-color: #f2f2f2;
         }
+        aside {
+            float: left;
+            width: 20%;
+            padding: 20px;
+            background-color: #e9e9e9;
+        }
+        aside img {
+            width: 100%;
+            height: auto;
+        }
         section:after {
             content: "";
             display: table;
             clear: both;
         }
         @media (max-width: 600px) {
-            nav, article {
+            nav, article, aside {
                 width: 100%;
                 height: auto;
             }
@@ -51,14 +62,14 @@
 </header>
 
 <section>
-<!--    <nav>-->
-<!--        <ul>-->
-<!--            <li><a href="#home">首页</a></li>-->
-<!--            <li><a href="#services">服务</a></li>-->
-<!--            <li><a href="#about">关于</a></li>-->
-<!--            <li><a href="#contact">联系方式</a></li>-->
-<!--        </ul>-->
-<!--    </nav>-->
+    <!-- <nav>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#services">服务</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#contact">联系方式</a></li>
+        </ul>
+    </nav> -->
 
     <article>
         <h2 id="home">Home</h2>
@@ -67,12 +78,15 @@
         <h2 id="services">Service</h2>
         <p>Coffee Assistant can help some users who need it to accurately control the time to brew coffee</p>
 
-
         <h2 id="contact">Email</h2>
         <ul>
             <li>grebrianking025@gmail.com</li>
         </ul>
     </article>
+
+    <aside>
+        <img src="icon.jpg" alt="Coffee Image">
+    </aside>
 </section>
 
 <footer>
