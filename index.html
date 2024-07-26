@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的官网</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            float: left;
+            width: 20%;
+            height: auto;
+            background: #ccc;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 60%;
+            background-color: #f2f2f2;
+        }
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Coffee Assistant</h1>
+    <p>Welcome to Coffee Assistant</p>
+</header>
+
+<section>
+<!--    <nav>-->
+<!--        <ul>-->
+<!--            <li><a href="#home">首页</a></li>-->
+<!--            <li><a href="#services">服务</a></li>-->
+<!--            <li><a href="#about">关于</a></li>-->
+<!--            <li><a href="#contact">联系方式</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+
+    <article>
+        <h2 id="home">Home</h2>
+        <p>Coffee Assistant</p>
+
+        <h2 id="services">Service</h2>
+        <p>Coffee Assistant can help some users who need it to accurately control the time to brew coffee</p>
+
+
+        <h2 id="contact">Email</h2>
+        <ul>
+            <li>grebrianking025@gmail.com</li>
+        </ul>
+    </article>
+</section>
+
+<footer>
+    <p>Coffee Assistant</p>
+</footer>
+
+</body>
+</html>
